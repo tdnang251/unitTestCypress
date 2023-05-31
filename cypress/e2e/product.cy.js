@@ -6,7 +6,7 @@ describe('The Search Page', () => {
   
       cy.visit('http://localhost:8000/product/search')
 
-      Cypress.Commands.addQuery('searchProduct', function searchProduct(options = {ádasds:"th"}) {
+      Cypress.Commands.addQuery('searchProduct', function searchProduct(options = {name:"th"}) {
         const log = options.log !== false && Cypress.log({ timeout: options.timeout })
       
         this.set('timeout', options.timeout)
